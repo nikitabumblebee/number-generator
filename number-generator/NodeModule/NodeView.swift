@@ -11,15 +11,12 @@ struct NodeView: View {
     @ObservedObject var presenter: NodePresenter
     
     var body: some View {
-        ZStack {
-            GeometryReader { geometry in
-//                Rectangle()
-//                    .frame(width: geometry.size.width, alignment: .center)
-//                    .foregroundColor(Color.red)
-            }
+        GeometryReader { geometry in
             Text(String(presenter.numberValue))
                 .font(.system(size: 30))
+                .frame(width: geometry.size.width, height: 80)
         }
+        .frame(height: 80)
     }
 }
 

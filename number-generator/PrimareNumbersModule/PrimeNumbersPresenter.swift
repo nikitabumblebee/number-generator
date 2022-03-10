@@ -11,8 +11,8 @@ class PrimeNumbersPresenter: ObservableObject {
     @Published var primeNumbers: [Int]
     
     init() {
-        var calculation = Calculation()
-        var numbers = calculation.primes(upTo: 500)
+        let calculation = Calculation()
+        let numbers = calculation.primes(upTo: 500)
         
         self.primeNumbers = numbers
     }

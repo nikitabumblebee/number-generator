@@ -18,7 +18,6 @@
 		5EC554F027DA43BF008D7EFD /* NodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */; };
 		5EC554F327DA4561008D7EFD /* PrimeNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F227DA4561008D7EFD /* PrimeNumbersView.swift */; };
 		5EC554F527DA45D7008D7EFD /* PrimeNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */; };
-		5EC554F727DA46B7008D7EFD /* NodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F627DA46B7008D7EFD /* NodeEntity.swift */; };
 		5EC554FA27DA545A008D7EFD /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F927DA545A008D7EFD /* Calculation.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePresenter.swift; sourceTree = "<group>"; };
 		5EC554F227DA4561008D7EFD /* PrimeNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersView.swift; sourceTree = "<group>"; };
 		5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersPresenter.swift; sourceTree = "<group>"; };
-		5EC554F627DA46B7008D7EFD /* NodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEntity.swift; sourceTree = "<group>"; };
 		5EC554F927DA545A008D7EFD /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 			children = (
 				5EC554ED27DA43A1008D7EFD /* NodeView.swift */,
 				5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */,
-				5EC554F627DA46B7008D7EFD /* NodeEntity.swift */,
 			);
 			path = NodeModule;
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 				5EC554F327DA4561008D7EFD /* PrimeNumbersView.swift in Sources */,
 				5EC554FA27DA545A008D7EFD /* Calculation.swift in Sources */,
 				5EC554F527DA45D7008D7EFD /* PrimeNumbersPresenter.swift in Sources */,
-				5EC554F727DA46B7008D7EFD /* NodeEntity.swift in Sources */,
 				5EC554C327DA3EEB008D7EFD /* number_generatorApp.swift in Sources */,
 				5EC554EE27DA43A1008D7EFD /* NodeView.swift in Sources */,
 			);
