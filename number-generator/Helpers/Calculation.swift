@@ -15,25 +15,24 @@ class Calculation {
         }
         var numbers = Array(firstPrime...rangeEndNumber)
 
-        // Index of current prime in numbers array, at the beginning it is 0 so number is 2
         var currentPrimeIndex = 0
 
-        // Check if there is any number left which could be prime
         while currentPrimeIndex < numbers.count {
-            // Number at currentPrimeIndex is next prime
             let currentPrime = numbers[currentPrimeIndex]
 
-            // Create array with numbers after current prime and remove all that are divisible by this prime
             var numbersAfterPrime = numbers.suffix(from: currentPrimeIndex + 1)
             numbersAfterPrime.removeAll(where: { $0 % currentPrime == 0 })
 
-            // Set numbers as current numbers up to current prime + numbers after prime without numbers divisible by current prime
             numbers = numbers.prefix(currentPrimeIndex + 1) + Array(numbersAfterPrime)
 
-            // Increase index for current prime
             currentPrimeIndex += 1
         }
 
+        return numbers
+    }
+    
+    func fibonachi() -> [Int] {
+        var numbers = [1,2,3]
         return numbers
     }
 }
