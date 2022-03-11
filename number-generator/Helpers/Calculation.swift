@@ -8,8 +8,8 @@
 import Foundation
 
 class Calculation {
-    func primes(upTo rangeEndNumber: Int) -> [Int] {
-        let firstPrime = 2
+    func primes(from rangeStartNumber: Int, upTo rangeEndNumber: Int) -> [Int] {
+        let firstPrime = rangeStartNumber
         guard rangeEndNumber >= firstPrime else {
             fatalError("End of range has to be greater than or equal to \(firstPrime)!")
         }
