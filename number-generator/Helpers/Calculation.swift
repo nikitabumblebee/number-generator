@@ -7,22 +7,6 @@
 
 import Foundation
 
-class Calculation: PrimeNumber {
+class Calculation: PrimeNumber, FibonacciNumber {
     var numberValue: Int = 0
-
-    func fibonacci() -> [Int] {
-        var numbers = [1,2,3]
-        return numbers
-    }
-    
-    func fib(_ n: Int) -> Int {
-        var a = 1
-        var b = 1
-        guard n > 1 else { return a }
-        
-        (2...n).forEach { _ in
-            (a, b) = (a + b, a)
-        }
-        return a
-    }
 }
