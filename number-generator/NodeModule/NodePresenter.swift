@@ -9,10 +9,8 @@ import Foundation
 
 class NodePresenter: ObservableObject {
     @Published var numberValue: Int
-    @Published var isLast: Bool
     
-    init(numberValue: Int, isLast: Bool) {
+    init(numberValue: Int) {
         self.numberValue = numberValue
-        self.isLast = isLast
     }
 }

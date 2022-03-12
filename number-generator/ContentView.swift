@@ -10,7 +10,16 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        PrimeNumbersView(presenter: PrimeNumbersPresenter())
+        TabView {
+            PrimeNumbersView(presenter: PrimeNumbersPresenter())
+                .tabItem {
+                    Label("Prime", systemImage: "number.circle")
+                }
+            PrimeNumbersView(presenter: PrimeNumbersPresenter())
+                .tabItem {
+                    Label("Prime", systemImage: "paperclip.circle")
+                }
+        }
     }
 }
 

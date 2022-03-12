@@ -11,15 +11,13 @@ class PrimeNumbersPresenter: ObservableObject {
     @Published var primeNumbers: [Int]
     
     init() {
-        let calculation = Calculation()
-        let numbers = calculation.primes(from: 2, upTo: 500)
-        
-        self.primeNumbers = numbers
+        self.primeNumbers = [2]
+        addNewNumbers()
     }
     
     func addNewNumbers() {
         let calculation = Calculation()
-        let numbers = calculation.primes(from: primeNumbers.last!, upTo: primeNumbers.last! + 500)
-        primeNumbers.append(contentsOf: numbers)
+        let nextPrimeValue = calculation.getNextPrime(numberValue: primeNumbers.last!)
+        primeNumbers.append(nextPrimeValue)
     }
 }

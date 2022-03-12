@@ -7,32 +7,22 @@
 
 import Foundation
 
-class Calculation {
-    func primes(from rangeStartNumber: Int, upTo rangeEndNumber: Int) -> [Int] {
-        let firstPrime = rangeStartNumber
-        guard rangeEndNumber >= firstPrime else {
-            fatalError("End of range has to be greater than or equal to \(firstPrime)!")
-        }
-        var numbers = Array(firstPrime...rangeEndNumber)
+class Calculation: PrimeNumber {
+    var numberValue: Int = 0
 
-        var currentPrimeIndex = 0
-
-        while currentPrimeIndex < numbers.count {
-            let currentPrime = numbers[currentPrimeIndex]
-
-            var numbersAfterPrime = numbers.suffix(from: currentPrimeIndex + 1)
-            numbersAfterPrime.removeAll(where: { $0 % currentPrime == 0 })
-
-            numbers = numbers.prefix(currentPrimeIndex + 1) + Array(numbersAfterPrime)
-
-            currentPrimeIndex += 1
-        }
-
+    func fibonacci() -> [Int] {
+        var numbers = [1,2,3]
         return numbers
     }
     
-    func fibonachi() -> [Int] {
-        var numbers = [1,2,3]
-        return numbers
+    func fib(_ n: Int) -> Int {
+        var a = 1
+        var b = 1
+        guard n > 1 else { return a }
+        
+        (2...n).forEach { _ in
+            (a, b) = (a + b, a)
+        }
+        return a
     }
 }
