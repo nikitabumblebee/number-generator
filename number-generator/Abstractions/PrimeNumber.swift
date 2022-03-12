@@ -14,7 +14,7 @@ protocol PrimeNumber {
 
 extension PrimeNumber {
     func checkPrime(numberValue: String) -> Bool {
-        let numberAsInt = Int(numberValue)!
+        let numberAsInt = UInt64(numberValue)!
         
         if numberAsInt <= 1 {
             return false
@@ -25,7 +25,7 @@ extension PrimeNumber {
         if numberAsInt % 2 == 0 || numberAsInt % 3 == 0 {
             return false
         }
-        var i = 5
+        var i = 5 as UInt64
         while i * i <= numberAsInt {
             if (numberAsInt % i == 0 || numberAsInt % (i + 2) == 0) {
                 return false
@@ -36,7 +36,7 @@ extension PrimeNumber {
     }
     
     func getNextPrime(numberValue: String) -> String {
-        let numberAsInt = Int(numberValue)!
+        let numberAsInt = UInt64(numberValue)!
         if numberAsInt <= 1 {
             return "2"
         }
@@ -45,7 +45,7 @@ extension PrimeNumber {
         var primeAsString = ""
         var isFound = false
         
-        while (!isFound) {
+        while (!isFound && prime <= UInt64.max) {
             prime += 1
             primeAsString = String(prime)
             if checkPrime(numberValue: primeAsString) {
