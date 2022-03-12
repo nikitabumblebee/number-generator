@@ -14,7 +14,6 @@ class FibonacciPresenter: BaseTablePresenter {
         self.interactor = interactor
         super.init()
         self.numbers = interactor.fibonacci.numbers
-        addNewValue()
     }
     
     override func addNewValue() {

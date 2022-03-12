@@ -8,12 +8,9 @@
 import Foundation
 
 class BaseTablePresenter: ObservableObject {
-    @Published var numbers: [String]
+    @Published var numbers: [String] = []
     
-    init() {
-        self.numbers = []
+    func addNewValue() {
+        preconditionFailure("This method must be overridden")
     }
-    
-    func addNewValue() { }
 }
-

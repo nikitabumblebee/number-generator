@@ -14,8 +14,6 @@ class PrimeNumbersPresenter: BaseTablePresenter {
         self.interactor = interactor
         super.init()
         self.numbers = interactor.primesNumbersEntity.numbers
-        
-        addNewValue()
     }
     
     override func addNewValue() {
