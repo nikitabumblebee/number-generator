@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol PrimeNumber {
-    var numberValue: String { get set }
-    
+protocol PrimeNumber {    
     func checkPrime(numberValue: String) -> Bool
     func getNextPrime(numberValue: String) -> String
 }

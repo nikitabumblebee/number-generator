@@ -8,8 +8,6 @@
 import Foundation
 
 protocol FibonacciNumber {
-    var numberValue: String { get set }
-    
     func getNextFibonacci(preLastValue: String, lastValue: String) -> String
 }
 
@@ -39,6 +37,5 @@ extension FibonacciNumber {
             iterator -= 1
         }
         return String(res.reversed())
-        //return preLastValue + lastValue
     }
 }
