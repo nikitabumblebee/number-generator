@@ -8,5 +8,6 @@
 import Foundation
 
 class Calculation: PrimeNumber, FibonacciNumber {
-    var numberValue: Int = 0
+    var numberValue: String = "0"
 }
+

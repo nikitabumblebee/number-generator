@@ -8,9 +8,9 @@
 import Foundation
 
 class NodePresenter: ObservableObject {
-    @Published var numberValue: Int
+    @Published var numberValue: String
     
-    init(numberValue: Int) {
+    init(numberValue: String) {
         self.numberValue = numberValue
     }
 }

@@ -8,11 +8,11 @@
 import Foundation
 
 class FibonacciEntity: BaseTableEntity {
-    var numbers: [Int] = [0, 1]
+    var numbers: [String] = ["0", "1"]
     
     func addNewValue() {
         let calc = Calculation()
-        let nextFibbonacci = calc.getNextFibonacci(preLastValue: numbers[numbers.count - 2], lastValue: numbers[numbers.count - 1])
-        numbers.append(nextFibbonacci)
+        let nextFibonacci = calc.getNextFibonacci(preLastValue: String(numbers[numbers.count - 2]), lastValue: String(numbers[numbers.count - 1]))
+        numbers.append(nextFibonacci)
     }
 }

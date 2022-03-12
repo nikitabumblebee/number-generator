@@ -8,7 +8,7 @@
 import Foundation
 
 class BaseTablePresenter: ObservableObject {
-    @Published var numbers: [Int]
+    @Published var numbers: [String]
     
     init() {
         self.numbers = []

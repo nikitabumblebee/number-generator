@@ -8,7 +8,7 @@
 import Foundation
 
 class PrimeNumbersEntity: BaseTableEntity {
-    var numbers: [Int] = [2]
+    var numbers: [String] = ["2"]
     
     func addNewValue() {
         let calculation = Calculation()

@@ -23,21 +23,21 @@ class NumbersTablePresenter: ObservableObject {
             self.numbers = [0, 1]
             break
         }
-        addNextNumber()
+        //addNextNumber()
     }
     
-    func addNextNumber() {
-        let calculation = Calculation()
-        switch tableType {
-        case .Prime:
-            let nextValue = calculation.getNextPrime(numberValue: numbers.last!)
-            numbers.append(nextValue)
-            break
-        case .Fibonacci:
-            let nextValue = calculation.getNextFibonacci(preLastValue: numbers[numbers.count - 2], lastValue: numbers[numbers.count - 1])
-            numbers.append(nextValue)
-            break
-        }
-    }
+//    func addNextNumber() {
+//        let calculation = Calculation()
+//        switch tableType {
+//        case .Prime:
+//            let nextValue = calculation.getNextPrime(numberValue: numbers.last!)
+//            numbers.append(nextValue)
+//            break
+//        case .Fibonacci:
+//            let nextValue = calculation.getNextFibonacci(preLastValue: numbers[numbers.count - 2], lastValue: numbers[numbers.count - 1])
+//            numbers.append(nextValue)
+//            break
+//        }
+//    }
     
 }

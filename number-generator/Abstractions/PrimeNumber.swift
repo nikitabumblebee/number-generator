@@ -8,26 +8,28 @@
 import Foundation
 
 protocol PrimeNumber {
-    var numberValue: Int { get set }
+    var numberValue: String { get set }
     
-    func checkPrime(numberValue: Int) -> Bool
-    func getNextPrime(numberValue: Int) -> Int
+    func checkPrime(numberValue: String) -> Bool
+    func getNextPrime(numberValue: String) -> String
 }
 
 extension PrimeNumber {
-    func checkPrime(numberValue: Int) -> Bool {
-        if numberValue <= 1 {
+    func checkPrime(numberValue: String) -> Bool {
+        let numberAsInt = Int(numberValue)!
+        
+        if numberAsInt <= 1 {
             return false
         }
-        if numberValue <= 3 {
+        if numberAsInt <= 3 {
             return true
         }
-        if numberValue % 2 == 0 || numberValue % 3 == 0 {
+        if numberAsInt % 2 == 0 || numberAsInt % 3 == 0 {
             return false
         }
         var i = 5
-        while i * i <= numberValue {
-            if (numberValue % i == 0 || numberValue % (i + 2) == 0) {
+        while i * i <= numberAsInt {
+            if (numberAsInt % i == 0 || numberAsInt % (i + 2) == 0) {
                 return false
             }
             i = i + 6
@@ -35,20 +37,23 @@ extension PrimeNumber {
         return true
     }
     
-    func getNextPrime(numberValue: Int) -> Int {
-        if numberValue <= 1 {
-            return 2
+    func getNextPrime(numberValue: String) -> String {
+        let numberAsInt = Int(numberValue)!
+        if numberAsInt <= 1 {
+            return "2"
         }
         
-        var prime = numberValue
+        var prime = numberAsInt
+        var primeAsString = ""
         var isFound = false
         
         while (!isFound) {
             prime += 1
-            if checkPrime(numberValue: prime) {
+            primeAsString = String(prime)
+            if checkPrime(numberValue: primeAsString) {
                 isFound = true
             }
         }
-        return prime
+        return primeAsString
     }
 }

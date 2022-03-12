@@ -30,6 +30,7 @@
 		5EC5551127DC5E39008D7EFD /* PrimeNumbersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551027DC5E39008D7EFD /* PrimeNumbersEntity.swift */; };
 		5EC5551327DC5EB2008D7EFD /* PrimeNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */; };
 		5EC5551527DC60E3008D7EFD /* BaseTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551427DC60E3008D7EFD /* BaseTablePresenter.swift */; };
+		5EC5551827DC847E008D7EFD /* BaseTypesExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551727DC847E008D7EFD /* BaseTypesExtenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		5EC5551027DC5E39008D7EFD /* PrimeNumbersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersEntity.swift; sourceTree = "<group>"; };
 		5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersInteractor.swift; sourceTree = "<group>"; };
 		5EC5551427DC60E3008D7EFD /* BaseTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTablePresenter.swift; sourceTree = "<group>"; };
+		5EC5551727DC847E008D7EFD /* BaseTypesExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypesExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		5EC554C127DA3EEB008D7EFD /* number-generator */ = {
 			isa = PBXGroup;
 			children = (
+				5EC5551627DC8455008D7EFD /* Extensions */,
 				5EC5550427DC5674008D7EFD /* Enums */,
 				5EC5550327DC5652008D7EFD /* NumberTableModule */,
 				5EC554FC27DC4D11008D7EFD /* Abstractions */,
@@ -229,6 +232,14 @@
 				5EC5550527DC56D7008D7EFD /* NumericTableType.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		5EC5551627DC8455008D7EFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EC5551727DC847E008D7EFD /* BaseTypesExtenstion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 				5EC5551327DC5EB2008D7EFD /* PrimeNumbersInteractor.swift in Sources */,
 				5EC5551527DC60E3008D7EFD /* BaseTablePresenter.swift in Sources */,
 				5EC5551127DC5E39008D7EFD /* PrimeNumbersEntity.swift in Sources */,
+				5EC5551827DC847E008D7EFD /* BaseTypesExtenstion.swift in Sources */,
 				5EC554F327DA4561008D7EFD /* NumbersTableView.swift in Sources */,
 				5EC5550927DC5731008D7EFD /* NumbersTablePresenter.swift in Sources */,
 				5EC5550B27DC5ADE008D7EFD /* BaseTableEntity.swift in Sources */,
