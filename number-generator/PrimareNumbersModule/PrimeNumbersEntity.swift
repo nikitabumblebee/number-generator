@@ -7,12 +7,11 @@
 
 import Foundation
 
-class PrimeNumbersEntity: BaseTableEntity {
+class PrimeNumbersEntity: BaseTableEntity, PrimeNumber {
     var numbers: [String] = ["2"]
     
     func addNewValue() {
-        let calculation = Calculation()
-        let nextPrimeValue = calculation.getNextPrime(numberValue: numbers.last!)
+        let nextPrimeValue = getNextPrime(numberValue: numbers.last!)
         numbers.append(nextPrimeValue)
     }
 }

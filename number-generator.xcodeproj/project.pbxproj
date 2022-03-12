@@ -18,7 +18,6 @@
 		5EC554F027DA43BF008D7EFD /* NodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */; };
 		5EC554F327DA4561008D7EFD /* NumbersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F227DA4561008D7EFD /* NumbersTableView.swift */; };
 		5EC554F527DA45D7008D7EFD /* PrimeNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */; };
-		5EC554FA27DA545A008D7EFD /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F927DA545A008D7EFD /* Calculation.swift */; };
 		5EC554FE27DC4D2D008D7EFD /* PrimeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554FD27DC4D2D008D7EFD /* PrimeNumber.swift */; };
 		5EC5550027DC4D9D008D7EFD /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554FF27DC4D9D008D7EFD /* FibonacciNumber.swift */; };
 		5EC5550227DC549B008D7EFD /* FibonacciPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5550127DC549B008D7EFD /* FibonacciPresenter.swift */; };
@@ -63,7 +62,6 @@
 		5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePresenter.swift; sourceTree = "<group>"; };
 		5EC554F227DA4561008D7EFD /* NumbersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersTableView.swift; sourceTree = "<group>"; };
 		5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersPresenter.swift; sourceTree = "<group>"; };
-		5EC554F927DA545A008D7EFD /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 		5EC554FD27DC4D2D008D7EFD /* PrimeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumber.swift; sourceTree = "<group>"; };
 		5EC554FF27DC4D9D008D7EFD /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
 		5EC5550127DC549B008D7EFD /* FibonacciPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciPresenter.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				5EC5550327DC5652008D7EFD /* NumberTableModule */,
 				5EC554FC27DC4D11008D7EFD /* Abstractions */,
 				5EC554FB27DC3527008D7EFD /* FibonacciNumbersModule */,
-				5EC554F827DA5414008D7EFD /* Helpers */,
 				5EC554F127DA4535008D7EFD /* PrimareNumbersModule */,
 				5EC554EC27DA4385008D7EFD /* NodeModule */,
 				5EC554C227DA3EEB008D7EFD /* number_generatorApp.swift */,
@@ -181,14 +178,6 @@
 				5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */,
 			);
 			path = PrimareNumbersModule;
-			sourceTree = "<group>";
-		};
-		5EC554F827DA5414008D7EFD /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				5EC554F927DA545A008D7EFD /* Calculation.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		5EC554FB27DC3527008D7EFD /* FibonacciNumbersModule */ = {
@@ -368,7 +357,6 @@
 				5EC5551827DC847E008D7EFD /* BaseTypesExtenstion.swift in Sources */,
 				5EC554F327DA4561008D7EFD /* NumbersTableView.swift in Sources */,
 				5EC5550B27DC5ADE008D7EFD /* BaseTableEntity.swift in Sources */,
-				5EC554FA27DA545A008D7EFD /* Calculation.swift in Sources */,
 				5EC5550F27DC5C0A008D7EFD /* FibonacciInteractor.swift in Sources */,
 				5EC5550027DC4D9D008D7EFD /* FibonacciNumber.swift in Sources */,
 				5EC554F527DA45D7008D7EFD /* PrimeNumbersPresenter.swift in Sources */,
