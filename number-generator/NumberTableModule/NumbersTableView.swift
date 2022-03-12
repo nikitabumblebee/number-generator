@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NumbersTableView: View {
-    @ObservedObject var presenter: NumbersTablePresenter
+    @ObservedObject var presenter: BaseTablePresenter
             
     var body: some View {
         ScrollView {
@@ -21,7 +21,7 @@ struct NumbersTableView: View {
                         NodeView(presenter: nodePresenter)
                             .background(isFistColor ? .gray : .cyan)
                             .onAppear {
-                                presenter.addNextNumber()
+                                presenter.addNewValue()
                             }
                     }
                     else {
@@ -37,6 +37,6 @@ struct NumbersTableView: View {
 
 struct PrimeNumbersView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersTableView(presenter: NumbersTablePresenter(tableType: NumericTableType.Prime))
+        NumbersTableView(presenter: BaseTablePresenter() /*NumbersTablePresenter(tableType: NumericTableType.Prime)*/)
     }
 }

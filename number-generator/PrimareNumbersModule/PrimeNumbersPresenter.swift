@@ -7,18 +7,19 @@
 
 import Foundation
 
-class PrimeNumbersPresenter: ObservableObject {
-    @Published var primeNumbers: [Int]
+class PrimeNumbersPresenter: BaseTablePresenter {    
+    private let interactor: PrimeNumbersInteractor
     
-    init() {
-        self.primeNumbers = [2]
+    init(interactor: PrimeNumbersInteractor) {
+        self.interactor = interactor
+        super.init()
+        self.numbers = interactor.primesNumbersEntity.numbers
         
-        addPrimeNumber()
+        addNewValue()
     }
     
-    func addPrimeNumber() {
-        let calculation = Calculation()
-        let nextPrimeValue = calculation.getNextPrime(numberValue: primeNumbers.last!)
-        primeNumbers.append(nextPrimeValue)
+    override func addNewValue() {
+        interactor.addNewValue()
+        self.numbers = interactor.primesNumbersEntity.numbers
     }
 }

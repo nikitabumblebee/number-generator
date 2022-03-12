@@ -7,18 +7,18 @@
 
 import Foundation
 
-class FibonacciPresenter: ObservableObject {
-    @Published var fibonacciNumbers: [Int]
+class FibonacciPresenter: BaseTablePresenter {
+    private let interactor: FibonacciInteractor
     
-    init() {
-        self.fibonacciNumbers = [0, 1]
-        addFibonacciNumber()
+    init(interactor: FibonacciInteractor) {
+        self.interactor = interactor
+        super.init()
+        self.numbers = interactor.fibonacci.numbers
+        addNewValue()
     }
     
-    
-    func addFibonacciNumber() {
-        let calc = Calculation()
-        let nextFibbonacci = calc.getNextFibonacci(preLastValue: fibonacciNumbers[fibonacciNumbers.count - 2], lastValue: fibonacciNumbers[fibonacciNumbers.count - 1])
-        fibonacciNumbers.append(nextFibbonacci)
+    override func addNewValue() {
+        interactor.addNewValue()
+        self.numbers = interactor.fibonacci.numbers
     }
 }

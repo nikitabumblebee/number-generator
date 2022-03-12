@@ -11,13 +11,13 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            NumbersTableView(presenter: NumbersTablePresenter(tableType: NumericTableType.Prime))
+            NumbersTableView(presenter: PrimeNumbersPresenter(interactor: PrimeNumbersInteractor()))
                 .tabItem {
                     Label("Prime", systemImage: "number.circle")
                 }
-            NumbersTableView(presenter: NumbersTablePresenter(tableType: NumericTableType.Fibonacci))
+            NumbersTableView(presenter: FibonacciPresenter(interactor: FibonacciInteractor()))
                 .tabItem {
-                    Label("Prime", systemImage: "paperclip.circle")
+                    Label("Fibonacci", systemImage: "paperclip.circle")
                 }
         }
     }
