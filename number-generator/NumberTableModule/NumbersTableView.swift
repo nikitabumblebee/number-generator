@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-struct PrimeNumbersView: View {
-    @ObservedObject var presenter: PrimeNumbersPresenter
+struct NumbersTableView: View {
+    @ObservedObject var presenter: NumbersTablePresenter
             
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 0)], spacing: 0) {
-                ForEach(0..<presenter.primeNumbers.count, id: \.self) { item in
-                    let currentValue = presenter.primeNumbers[item]
+                ForEach(0..<presenter.numbers.count, id: \.self) { item in
+                    let currentValue = presenter.numbers[item]
                     let nodePresenter = NodePresenter(numberValue: currentValue)
                     let isFistColor = ((item % 4) == 1) || ((item % 4) == 2)
-                    if item == presenter.primeNumbers.count - 1 {
+                    if item == presenter.numbers.count - 1 {
                         NodeView(presenter: nodePresenter)
                             .background(isFistColor ? .gray : .cyan)
                             .onAppear {
-                                presenter.addNewNumbers()
+                                presenter.addNextNumber()
                             }
                     }
                     else {
@@ -37,6 +37,6 @@ struct PrimeNumbersView: View {
 
 struct PrimeNumbersView_Previews: PreviewProvider {
     static var previews: some View {
-        PrimeNumbersView(presenter: PrimeNumbersPresenter())
+        NumbersTableView(presenter: NumbersTablePresenter(tableType: NumericTableType.Prime))
     }
 }
