@@ -8,7 +8,7 @@
 import Foundation
 
 class PrimeNumbersEntity: BaseTableEntity, PrimeNumber {
-    var numbers: [String] = ["2"]
+    private(set) var numbers: [String] = ["2"]
     
     func addNewValue() {
         let nextPrimeValue = getNextPrime(numberValue: numbers.last!)

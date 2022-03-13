@@ -8,7 +8,7 @@
 import Foundation
 
 protocol BaseTableEntity {
-    var numbers: [String] { get set }
+    var numbers: [String] { get }
     
     func addNewValue()
 }
