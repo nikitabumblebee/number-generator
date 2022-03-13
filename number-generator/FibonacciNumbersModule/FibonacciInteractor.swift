@@ -8,10 +8,28 @@
 import Foundation
 import Combine
 
+/// Provides an interactor layer in VIPER architecture for Fibonacci module
 class FibonacciInteractor {
-    let fibonacci = FibonacciEntity()
     
+    /// Gets an instance of `FibonacciEntity`
+    let fibonacciEntity: FibonacciEntity
+    
+    /**
+     Initializes an instance of `FibonacciInteractor`
+     
+     Creates a constant instance of `FibonacciEntity`
+     */
+    init() {
+        fibonacciEntity = FibonacciEntity()
+    }
+    
+    /**
+     Add new value to collection of Fibonacci
+     
+     Calling this method will add new number
+     to the end of the Fibonacci sequence collection
+     */
     func addNewValue() {
-        fibonacci.addNewValue()
+        fibonacciEntity.addNewValue()
     }
 }

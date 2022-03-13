@@ -131,7 +131,7 @@
 				5EC554C227DA3EEB008D7EFD /* number_generatorApp.swift */,
 				5EC5550327DC5652008D7EFD /* NumberTableModule */,
 				5EC554C827DA3EEC008D7EFD /* Preview Content */,
-				5EC554F127DA4535008D7EFD /* PrimareNumbersModule */,
+				5EC554F127DA4535008D7EFD /* PrimeNumbersModule */,
 			);
 			path = "number-generator";
 			sourceTree = "<group>";
@@ -170,14 +170,14 @@
 			path = NodeModule;
 			sourceTree = "<group>";
 		};
-		5EC554F127DA4535008D7EFD /* PrimareNumbersModule */ = {
+		5EC554F127DA4535008D7EFD /* PrimeNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
 				5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */,
 				5EC5551027DC5E39008D7EFD /* PrimeNumbersEntity.swift */,
 				5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */,
 			);
-			path = PrimareNumbersModule;
+			path = PrimeNumbersModule;
 			sourceTree = "<group>";
 		};
 		5EC554FB27DC3527008D7EFD /* FibonacciNumbersModule */ = {

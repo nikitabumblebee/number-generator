@@ -7,8 +7,26 @@
 
 import Foundation
 
-protocol PrimeNumber {    
+/// Provides prime numbers methods
+protocol PrimeNumber {
+    
+    /**
+     Check prime number
+     
+     Calling this method checking a number for its relation to prime numbers
+     
+     - Returns: Boolean value of check
+     */
     func checkPrime(numberValue: String) -> Bool
+    
+    /**
+     Get next prime number
+     
+     Calling this method will return next prime number.
+     Calculations are done through `String` according to peculiar properties of big integers.
+     
+     - Returns: Prime number
+     */
     func getNextPrime(numberValue: String) -> String
 }
 

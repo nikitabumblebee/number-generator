@@ -7,15 +7,23 @@
 
 import Foundation
 
+/// Provides Fibonacci sequence methods
 protocol FibonacciNumber {
+    
+    /**
+     Get next Fibonacci number in sequence
+     
+     - Returns: Next Fibonacci number in sequence
+     */
     func getNextFibonacci(preLastValue: String, lastValue: String) -> String
 }
 
+/// Provides default reqlization of `FibonacciNumber` protocol methods
 extension FibonacciNumber {
     func getNextFibonacci(preLastValue: String, lastValue: String) -> String {
-        var res: String = ""
-        var c = 0
-        var d = 0
+        var resultValue: String = ""
+        var divisionRemainder = 0
+        var integerPart = 0
         var myFirstValue = preLastValue
         let mySecondValue = lastValue
         
@@ -28,14 +36,14 @@ extension FibonacciNumber {
         }
         var iterator = max - 1
         while (iterator >= 0) {
-            c = (d + Int(myFirstValue[iterator])! + Int(mySecondValue[iterator])!) % 10
-            res += String(c)
-            d = (d + Int(myFirstValue[iterator])! + Int(mySecondValue[iterator])!) / 10
-            if d != 0 && iterator == 0 {
-                res += String(d)
+            divisionRemainder = (integerPart + Int(myFirstValue[iterator])! + Int(mySecondValue[iterator])!) % 10
+            resultValue += String(divisionRemainder)
+            integerPart = (integerPart + Int(myFirstValue[iterator])! + Int(mySecondValue[iterator])!) / 10
+            if integerPart != 0 && iterator == 0 {
+                resultValue += String(integerPart)
             }
             iterator -= 1
         }
-        return String(res.reversed())
+        return String(resultValue.reversed())
     }
 }
