@@ -7,6 +7,9 @@
 
 import Foundation
 
+/**
+ Provides an extension for `String` type that allow to use subscript
+ */
 extension String {
 
     var length: Int {
