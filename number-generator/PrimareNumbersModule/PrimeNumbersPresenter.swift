@@ -7,13 +7,17 @@
 
 import Foundation
 
-class PrimeNumbersPresenter: ObservableObject {
-    @Published var primeNumbers: [Int]
+class PrimeNumbersPresenter: BaseTablePresenter {    
+    private let interactor: PrimeNumbersInteractor
     
-    init() {
-        var calculation = Calculation()
-        var numbers = calculation.primes(upTo: 500)
-        
-        self.primeNumbers = numbers
+    init(interactor: PrimeNumbersInteractor) {
+        self.interactor = interactor
+        super.init()
+        self.numbers = interactor.primesNumbersEntity.numbers
+    }
+    
+    override func addNewValue() {
+        interactor.addNewValue()
+        self.numbers = interactor.primesNumbersEntity.numbers
     }
 }

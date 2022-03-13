@@ -10,8 +10,16 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Text("Hello, mee!")
-            .padding()
+        TabView {
+            NumbersTableView(presenter: PrimeNumbersPresenter(interactor: PrimeNumbersInteractor()))
+                .tabItem {
+                    Label("Prime", systemImage: "number.circle")
+                }
+            NumbersTableView(presenter: FibonacciPresenter(interactor: FibonacciInteractor()))
+                .tabItem {
+                    Label("Fibonacci", systemImage: "paperclip.circle")
+                }
+        }
     }
 }
 

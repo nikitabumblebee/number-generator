@@ -16,10 +16,18 @@
 		5EC554E027DA3EEC008D7EFD /* number_generatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554DF27DA3EEC008D7EFD /* number_generatorUITestsLaunchTests.swift */; };
 		5EC554EE27DA43A1008D7EFD /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554ED27DA43A1008D7EFD /* NodeView.swift */; };
 		5EC554F027DA43BF008D7EFD /* NodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */; };
-		5EC554F327DA4561008D7EFD /* PrimeNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F227DA4561008D7EFD /* PrimeNumbersView.swift */; };
+		5EC554F327DA4561008D7EFD /* NumbersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F227DA4561008D7EFD /* NumbersTableView.swift */; };
 		5EC554F527DA45D7008D7EFD /* PrimeNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */; };
-		5EC554F727DA46B7008D7EFD /* NodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F627DA46B7008D7EFD /* NodeEntity.swift */; };
-		5EC554FA27DA545A008D7EFD /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554F927DA545A008D7EFD /* Calculation.swift */; };
+		5EC554FE27DC4D2D008D7EFD /* PrimeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554FD27DC4D2D008D7EFD /* PrimeNumber.swift */; };
+		5EC5550027DC4D9D008D7EFD /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC554FF27DC4D9D008D7EFD /* FibonacciNumber.swift */; };
+		5EC5550227DC549B008D7EFD /* FibonacciPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5550127DC549B008D7EFD /* FibonacciPresenter.swift */; };
+		5EC5550B27DC5ADE008D7EFD /* BaseTableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5550A27DC5ADE008D7EFD /* BaseTableEntity.swift */; };
+		5EC5550D27DC5B40008D7EFD /* FibonacciEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5550C27DC5B40008D7EFD /* FibonacciEntity.swift */; };
+		5EC5550F27DC5C0A008D7EFD /* FibonacciInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5550E27DC5C0A008D7EFD /* FibonacciInteractor.swift */; };
+		5EC5551127DC5E39008D7EFD /* PrimeNumbersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551027DC5E39008D7EFD /* PrimeNumbersEntity.swift */; };
+		5EC5551327DC5EB2008D7EFD /* PrimeNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */; };
+		5EC5551527DC60E3008D7EFD /* BaseTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551427DC60E3008D7EFD /* BaseTablePresenter.swift */; };
+		5EC5551827DC847E008D7EFD /* BaseTypesExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5551727DC847E008D7EFD /* BaseTypesExtenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +60,18 @@
 		5EC554DF27DA3EEC008D7EFD /* number_generatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number_generatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5EC554ED27DA43A1008D7EFD /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePresenter.swift; sourceTree = "<group>"; };
-		5EC554F227DA4561008D7EFD /* PrimeNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersView.swift; sourceTree = "<group>"; };
+		5EC554F227DA4561008D7EFD /* NumbersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersTableView.swift; sourceTree = "<group>"; };
 		5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersPresenter.swift; sourceTree = "<group>"; };
-		5EC554F627DA46B7008D7EFD /* NodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEntity.swift; sourceTree = "<group>"; };
-		5EC554F927DA545A008D7EFD /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		5EC554FD27DC4D2D008D7EFD /* PrimeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumber.swift; sourceTree = "<group>"; };
+		5EC554FF27DC4D9D008D7EFD /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
+		5EC5550127DC549B008D7EFD /* FibonacciPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciPresenter.swift; sourceTree = "<group>"; };
+		5EC5550A27DC5ADE008D7EFD /* BaseTableEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableEntity.swift; sourceTree = "<group>"; };
+		5EC5550C27DC5B40008D7EFD /* FibonacciEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciEntity.swift; sourceTree = "<group>"; };
+		5EC5550E27DC5C0A008D7EFD /* FibonacciInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciInteractor.swift; sourceTree = "<group>"; };
+		5EC5551027DC5E39008D7EFD /* PrimeNumbersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersEntity.swift; sourceTree = "<group>"; };
+		5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersInteractor.swift; sourceTree = "<group>"; };
+		5EC5551427DC60E3008D7EFD /* BaseTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTablePresenter.swift; sourceTree = "<group>"; };
+		5EC5551727DC847E008D7EFD /* BaseTypesExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypesExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +122,16 @@
 		5EC554C127DA3EEB008D7EFD /* number-generator */ = {
 			isa = PBXGroup;
 			children = (
-				5EC554F827DA5414008D7EFD /* Helpers */,
-				5EC554F127DA4535008D7EFD /* PrimareNumbersModule */,
+				5EC554FC27DC4D11008D7EFD /* Abstractions */,
+				5EC554C627DA3EEC008D7EFD /* Assets.xcassets */,
+				5EC554C427DA3EEB008D7EFD /* ContentView.swift */,
+				5EC5551627DC8455008D7EFD /* Extensions */,
+				5EC554FB27DC3527008D7EFD /* FibonacciNumbersModule */,
 				5EC554EC27DA4385008D7EFD /* NodeModule */,
 				5EC554C227DA3EEB008D7EFD /* number_generatorApp.swift */,
-				5EC554C427DA3EEB008D7EFD /* ContentView.swift */,
-				5EC554C627DA3EEC008D7EFD /* Assets.xcassets */,
+				5EC5550327DC5652008D7EFD /* NumberTableModule */,
 				5EC554C827DA3EEC008D7EFD /* Preview Content */,
+				5EC554F127DA4535008D7EFD /* PrimareNumbersModule */,
 			);
 			path = "number-generator";
 			sourceTree = "<group>";
@@ -147,7 +166,6 @@
 			children = (
 				5EC554ED27DA43A1008D7EFD /* NodeView.swift */,
 				5EC554EF27DA43BF008D7EFD /* NodePresenter.swift */,
-				5EC554F627DA46B7008D7EFD /* NodeEntity.swift */,
 			);
 			path = NodeModule;
 			sourceTree = "<group>";
@@ -155,18 +173,48 @@
 		5EC554F127DA4535008D7EFD /* PrimareNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
-				5EC554F227DA4561008D7EFD /* PrimeNumbersView.swift */,
 				5EC554F427DA45D7008D7EFD /* PrimeNumbersPresenter.swift */,
+				5EC5551027DC5E39008D7EFD /* PrimeNumbersEntity.swift */,
+				5EC5551227DC5EB2008D7EFD /* PrimeNumbersInteractor.swift */,
 			);
 			path = PrimareNumbersModule;
 			sourceTree = "<group>";
 		};
-		5EC554F827DA5414008D7EFD /* Helpers */ = {
+		5EC554FB27DC3527008D7EFD /* FibonacciNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
-				5EC554F927DA545A008D7EFD /* Calculation.swift */,
+				5EC5550127DC549B008D7EFD /* FibonacciPresenter.swift */,
+				5EC5550C27DC5B40008D7EFD /* FibonacciEntity.swift */,
+				5EC5550E27DC5C0A008D7EFD /* FibonacciInteractor.swift */,
 			);
-			path = Helpers;
+			path = FibonacciNumbersModule;
+			sourceTree = "<group>";
+		};
+		5EC554FC27DC4D11008D7EFD /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				5EC554FD27DC4D2D008D7EFD /* PrimeNumber.swift */,
+				5EC554FF27DC4D9D008D7EFD /* FibonacciNumber.swift */,
+				5EC5550A27DC5ADE008D7EFD /* BaseTableEntity.swift */,
+				5EC5551427DC60E3008D7EFD /* BaseTablePresenter.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		5EC5550327DC5652008D7EFD /* NumberTableModule */ = {
+			isa = PBXGroup;
+			children = (
+				5EC554F227DA4561008D7EFD /* NumbersTableView.swift */,
+			);
+			path = NumberTableModule;
+			sourceTree = "<group>";
+		};
+		5EC5551627DC8455008D7EFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EC5551727DC847E008D7EFD /* BaseTypesExtenstion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,12 +349,20 @@
 			files = (
 				5EC554F027DA43BF008D7EFD /* NodePresenter.swift in Sources */,
 				5EC554C527DA3EEB008D7EFD /* ContentView.swift in Sources */,
-				5EC554F327DA4561008D7EFD /* PrimeNumbersView.swift in Sources */,
-				5EC554FA27DA545A008D7EFD /* Calculation.swift in Sources */,
+				5EC554FE27DC4D2D008D7EFD /* PrimeNumber.swift in Sources */,
+				5EC5550227DC549B008D7EFD /* FibonacciPresenter.swift in Sources */,
+				5EC5551327DC5EB2008D7EFD /* PrimeNumbersInteractor.swift in Sources */,
+				5EC5551527DC60E3008D7EFD /* BaseTablePresenter.swift in Sources */,
+				5EC5551127DC5E39008D7EFD /* PrimeNumbersEntity.swift in Sources */,
+				5EC5551827DC847E008D7EFD /* BaseTypesExtenstion.swift in Sources */,
+				5EC554F327DA4561008D7EFD /* NumbersTableView.swift in Sources */,
+				5EC5550B27DC5ADE008D7EFD /* BaseTableEntity.swift in Sources */,
+				5EC5550F27DC5C0A008D7EFD /* FibonacciInteractor.swift in Sources */,
+				5EC5550027DC4D9D008D7EFD /* FibonacciNumber.swift in Sources */,
 				5EC554F527DA45D7008D7EFD /* PrimeNumbersPresenter.swift in Sources */,
-				5EC554F727DA46B7008D7EFD /* NodeEntity.swift in Sources */,
 				5EC554C327DA3EEB008D7EFD /* number_generatorApp.swift in Sources */,
 				5EC554EE27DA43A1008D7EFD /* NodeView.swift in Sources */,
+				5EC5550D27DC5B40008D7EFD /* FibonacciEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
