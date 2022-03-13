@@ -7,7 +7,11 @@
 
 import Foundation
 
-/// Provides data and methods for collection of prime numbers
+/**
+ Provides data and methods for collection of prime numbers
+ 
+ Realizes `BaseTableEntity` and `PrimeNumber` protocols
+ */
 class PrimeNumbersEntity: BaseTableEntity, PrimeNumber {
     
     /// Gets a collection of prime numbers

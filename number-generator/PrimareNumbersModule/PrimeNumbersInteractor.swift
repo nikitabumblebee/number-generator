@@ -11,12 +11,12 @@ import Foundation
 class PrimeNumbersInteractor {
     
     /// Gets an instance of `PrimeNumbersEntity`
-    private(set) var primesNumbersEntity: PrimeNumbersEntity
+    let primesNumbersEntity: PrimeNumbersEntity
     
     /**
      Initializes an instance of `PrimeNumbersInteractor`
      
-     Creates an instance of `PrimeNumbersEntity`
+     Creates a constant instance of `PrimeNumbersEntity`
      */
     init() {
         primesNumbersEntity = PrimeNumbersEntity()

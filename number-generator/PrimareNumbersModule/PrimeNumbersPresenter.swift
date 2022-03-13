@@ -7,14 +7,18 @@
 
 import Foundation
 
-/// Provides presenter layer in VIPER architecture for Prime Numbers table
+/**
+ Provides presenter layer in VIPER architecture for Prime Numbers table
+ 
+ Inherits from `BaseTablePresenter` abstract class
+ */
 class PrimeNumbersPresenter: BaseTablePresenter {    
     private let interactor: PrimeNumbersInteractor
     
     /**
      Initializes an instance of PrimeNumbersPresenter
      - Parameters:
-     - interactor: present a layer for interaction with entity via methods
+        - interactor: present a layer for interaction with entity via methods
      
      - Returns: Instance of `PrimeNumbersPresenter`
      */
